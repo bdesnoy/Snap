@@ -1,12 +1,14 @@
 
 import SwiftUI
 
+@available(iOSApplicationExtension, unavailable)
 public enum SnapPoint {
     case height(CGFloat)
     case paddingToTop(CGFloat)
     case fraction(CGFloat)
 }
 
+@available(iOSApplicationExtension, unavailable)
 extension SnapPoint : ExpressibleByIntegerLiteral {
 
     public init(integerLiteral value: CGFloat.IntegerLiteralType) {
@@ -15,6 +17,7 @@ extension SnapPoint : ExpressibleByIntegerLiteral {
 
 }
 
+@available(iOSApplicationExtension, unavailable)
 extension SnapPoint : ExpressibleByFloatLiteral {
 
     public init(floatLiteral value: CGFloat.FloatLiteralType) {

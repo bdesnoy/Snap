@@ -2,6 +2,7 @@
 import Foundation
 import SwiftUI
 
+@available(iOSApplicationExtension, unavailable)
 struct SnapPointCalculator<State: SnapState> {
     struct SnapResult {
         let state: State
@@ -65,6 +66,7 @@ struct SnapPointCalculator<State: SnapState> {
 
 }
 
+@available(iOSApplicationExtension, unavailable)
 extension SnapPointCalculator {
     struct Input {
         let state: State
@@ -88,6 +90,7 @@ extension SnapPointCalculator {
 
 }
 
+@available(iOSApplicationExtension, unavailable)
 extension SnapPoint {
 
     fileprivate func offset(deviceHeight: CGFloat, safeAreaInsets: UIEdgeInsets) -> CGFloat {
@@ -104,6 +107,7 @@ extension SnapPoint {
 
 }
 
+@available(iOSApplicationExtension, unavailable)
 extension Collection {
     func pairs() -> AnySequence<(Element, Element)> {
         return AnySequence(zip(self, self.dropFirst()))

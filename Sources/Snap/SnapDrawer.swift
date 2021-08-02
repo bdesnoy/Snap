@@ -4,6 +4,7 @@ import SwiftUI
 let handleVerticalPadding: CGFloat = 16
 let handleThickness: CGFloat = 5
 
+@available(iOSApplicationExtension, unavailable)
 public struct SnapDrawer<StateType: SnapState, Background : View, Content: View> : View {
     private let calculator: SnapPointCalculator<StateType>
 

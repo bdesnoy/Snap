@@ -1,6 +1,7 @@
 
 import Foundation
 
+@available(iOSApplicationExtension, unavailable)
 public protocol SnapState: Equatable {
     associatedtype Visible
 
@@ -12,6 +13,7 @@ public protocol SnapState: Equatable {
     var visible: Visible? { get }
 }
 
+@available(iOSApplicationExtension, unavailable)
 public enum ModalSnapState: SnapState {
     public enum Visible {
         case large
@@ -33,6 +35,7 @@ public enum ModalSnapState: SnapState {
     }
 }
 
+@available(iOSApplicationExtension, unavailable)
 public enum OvercastSnapState: SnapState {
     public enum Visible {
         case large
@@ -58,6 +61,7 @@ public enum OvercastSnapState: SnapState {
     }
 }
 
+@available(iOSApplicationExtension, unavailable)
 public enum AppleMapsSnapState: SnapState {
     public enum Visible {
         case large
